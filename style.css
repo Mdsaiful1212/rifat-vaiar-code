@@ -51,8 +51,11 @@ nav {
 
 .half-width-1 img {
     width: 70%;
-    padding: 60px;
+    padding-left: 60px;
+
 }
+
+
 
 button {
     padding: 15px;
@@ -80,4 +83,47 @@ button {
     min-width: 10%;
     height: 100px;
     margin: 0 auto;
+}
+
+@media screen and (max-width:500px) {
+    * {
+        background-image: linear-gradient(rgb(152, 152, 175), rgb(151, 151, 110));
+    }
+
+    nav span {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        background-image: linear-gradient(green, purple);
+    }
+
+    nav a {
+        display: inline-block;
+        color: white;
+        border: 2px solid grey;
+        padding: 5px;
+        text-align: center;
+        background-image: linear-gradient(yellow, blue);
+    }
+
+    nav .logo {
+        background-image: linear-gradient(black, red);
+    }
+
+    .section-1 {
+        flex-direction: column;
+    }
+
+    .section-1 .half-width-1 {
+        width: 100%;
+    }
+
+    .section-1 .image-1 img {
+        width: 100%;
+    }
+
+    .main {
+        flex-direction: column;
+    }
 }
